@@ -1,0 +1,6 @@
+{
+	"appId": "com.grangemobile.app",
+	"appName": "Grange Mobile",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}

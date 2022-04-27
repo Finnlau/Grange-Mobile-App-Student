@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Module's Info</title>
+    <link rel="icon" type="image/x-icon" href="/www/Image/Favicon_logo.jpeg">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <link href="path/to/ggpopover.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script>
+      var myJSONString = '{"catalogArray":[{"moduleNo":"999001","time":"3pm - 5pm","roomNo":"4037","lecturer":"Charlie Cullen","location":"Aungier Street"},\n\
+                                      {"moduleNo":"999002","time":"1pm - 2pm","roomNo":"2005","lecturer":"Hugh McAtameny","location":"Aungier Street"},{\n\
+                                      "moduleNo":"999003","time":"11am - 12am","roomNo":"1045","lecturer":"Charlie Cullen","location":"Kevin Street"},{\n\
+                                      "moduleNo":"999004","time":"9am - 11.30am","roomNo":"0130","lecturer":"Paula McGloin","location":"Bolton Street"},{\n\
+                                      "moduleNo":"999005","time":"10am - 12pm","roomNo":"0123","lecturer":"Paula McGloin","location":"Cathal Brugha Street"},{\n\
+                                      "moduleNo":"999006","time":"9am - 1pm","roomNo":"3025","lecturer":"Keith Gardiner","location":"Aungier Street"},{\n\
+                                      "moduleNo":"999007","time":"4pm - 5.30pm","roomNo":"2103","lecturer":"James Wogan","location":"Kevin Street"},{\n\
+                                      "moduleNo":"999008","time":"10am - 2pm","roomNo":"0120","lecturer":"Keith Gardiner","location":"Aungier Street"},{\n\
+                                      "moduleNo":"999009","time":"1pm - 3pm","roomNo":"1004","lecturer":"Hugh McAtameny","location":"Bolton Street"},{\n\
+                                      "moduleNo":"999010","time":"2pm - 4pm","roomNo":"1089","lecturer":"James Wogan","location":"Aungier Street"}]}';
+      
+      var myJavaScriptObject = eval('('+myJSONString+')');
+      </script>
+</head>
+
+<body>
+
+  <!--NavBar-->
+  <nav class="navbar sticky-top navbar-expand-lg py-3 pt-5 navbar-dark" style="background-color: #004c6c">
+    <a class="navbar-brand" href="https://www.tudublin.ie">
+      <img src="/Image/TUD_Logo.jpg" class="image1" width="43" height="40" alt="">
+      GRANGE MOBILE
+    </a>
+  
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+
+        <li class="nav-item active">
+          <a class="nav-link" href="modules.html">Your Module's<span class="sr-only">(current)</span></a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="students.html">Student's Info</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="lecturers.html">Lecturer's Info</a>
+        </li>
+
+      </ul>
+    </div>
+  </nav>
+
+    <!-- StudentID -->
+    <a class="material-icons floating-btn" data-toggle="modal" data-target="#cardmodal" >
+      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-person-badge" viewBox="0 0 16 16">
+      <path d="M6.5 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1h-3zM11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+      <path d="M4.5 0A2.5 2.5 0 0 0 2 2.5V14a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2.5A2.5 2.5 0 0 0 11.5 0h-7zM3 2.5A1.5 1.5 0 0 1 4.5 1h7A1.5 1.5 0 0 1 13 2.5v10.795a4.2 4.2 0 0 0-.776-.492C11.392 12.387 10.063 12 8 12s-3.392.387-4.224.803a4.2 4.2 0 0 0-.776.492V2.5z"/>
+    </svg></a>
+  
+    <div class="modal fade" id="cardmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="card-modal-content">
+  
+          <div class="card">
+            
+            <div class="card_face">
+              <h2>STUDENT ID</h2>
+              <br>
+              <img src="/Image/StudentID_img.png" alt=""  class="image-id" width="180px" height="180px">
+              <h5>Finn Lau<br>D16125478</h5>
+              <img src="/Image/StudentQR.png" alt=""  class="image-qr" width="130px" height="130px">
+            </div>          
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- Header -->
+  <div class= " text-center font-weight-bold d-block p-5 bg-dark text-white">
+    <h1>Modules</h1>
+    <p>| TU294 |<br>| Creative Digital Media & UX |</p>
+  </div>
+
+  <!-- Data List Group-->
+  <div class="list-group" class data-toggle="modal" data-target="#modal"></div>
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modal" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      
+      <div class="modal-header" id="modal_header">
+        <h5 class="modal-title" id="ModalTitle">Module Information</h5>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <div class="modal-body" id="modules_details">
+        <p><span class="">Module No:</span> <span id="moduleNo"></span></p>
+        <p><span class="">Time: </span> <span id="time"></span></p>
+        <p><span class="">Room:</span> <span id="roomNo"></span></p>
+        <p><span class="">Lecture:</span> <span id="lecturer"></span></p>
+        <p><span class="">Location:</span> <span id="location"></span></p>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- Notification -->
+  <div class= " text-center font-weight-bold d-block p-5 bg-dark text-white">
+    <h1>Notification</h1>
+  </div>
+
+  <div class="notification my-4">
+      <div class="text">
+        <h6>Paula McGloin:</h6><p>Tomorrow class will be cancel for Digital Asset Management</p>
+      </div>
+  </div>
+
+  <div class="notification my-4">
+    <div class="text">
+      <h6>Hugh McAtameny:</h6><p>Assigment for (Design Principles) due date : 18/4/2022</p>
+    </div>
+  </div>
+
+  <div class="notification my-4">
+    <div class="text">
+      <h6>Keith Gardiner:</h6><p>Production skills module will start at 10am instead of 9am</p>
+    </div>
+  </div>
+
+  <div class="notification my-4">
+    <div class="text">
+      <h6>Charlie Cullen:</h6><p>Digital Studio class will move to room 1004</p>
+    </div>
+  </div>
+
+  <div class="notification my-4">
+    <div class="text">
+      <h6>Charlie Cullen:</h6><p>Tommow class will be cancel</p>
+    </div>
+  </div>
+   
+  
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="script.js"></script>
+  <script src="path/to/ggpopover.js"></script>
+
+  <!-- Data Input Script -->
+  <script>
+    $(document).ready(function(){
+        $.getJSON('http://127.0.0.1:8888/php/json-data-modules.php', function(data) {
+		$.each(data.modules, function(index, module) {
+			$('.list-group').append('<a href="#" class="list-group-item list-group-item-action ">'+module.moduleName+'<p> ◎ '+module.location+'<br> </a>');
+  }); 
+	  }); 
+    }); 
+  </script>
+
+  <!-- Notification Script -->
+  <script>
+  $(document).ready(function() {
+  $('.notification').hover(function() {
+    $(this).css('cursor','pointer');
+   }, function() {
+    $(this).css('cursor','auto');
+  });
+  $('.notification span').click(function() {
+               $(this).parents('.notification').fadeOut(800);
+           });
+   
+  $('.notification').click(function() {
+               $(this).fadeOut(800);
+           });
+  });
+  </script>
+
+  <!-- Module Information Script -->
+  <script>
+  document.getElementById("moduleNo").innerHTML = myJavaScriptObject.catalogArray[0].moduleNo;
+  document.getElementById("time").innerHTML = myJavaScriptObject.catalogArray[0].time;
+  document.getElementById("roomNo").innerHTML = myJavaScriptObject.catalogArray[0].roomNo;
+  document.getElementById("lecturer").innerHTML = myJavaScriptObject.catalogArray[0].lecturer; 
+  document.getElementById("location").innerHTML = myJavaScriptObject.catalogArray[0].location;
+  </script>
+
+  
+</body>
+</html>
